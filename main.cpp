@@ -1,10 +1,15 @@
 #include <iostream>
-#include "multiply.h"
-#include "add.h"
-#include "pow.h"
+#include "utils.h"
+
 
 int main(){
-
-	std::cout << pow(add(multiply(2,2),4),3);
+	int *tab = generator();
+	double max = max(tab);
+	double min = min(tab);
+	double sum = sum(tab);
+	printTable(tab);
+	std::cout << max << std::endl;
+	std::cout << min << std::endl;
+	std::cout << sum << std::endl;
 	return 0;
 }
