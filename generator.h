@@ -1,12 +1,14 @@
 #include <stdio.h> 
 #include <stdlib.h> 
 #include <time.h>
-void generator()
+int* generator()
 {
-  int i; 
-  srand(time(0)); 
-  i = rand()%101; 
-  printf("%i\n",i);  
-  system("PAUSE");    
-  return 0; 
+  int tab[10];
+  for(int i=0; i<10; i++)
+  {
+	  int j; 
+	  srand(time(0)); 
+	  tab[i] = rand()%101; 
+  }
+  return tab;
 }
