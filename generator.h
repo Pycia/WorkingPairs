@@ -1,8 +1,8 @@
 #include <stdio.h> 
 #include <stdlib.h> 
 #include <time.h>
-int main() 
-{ 
+void generator()
+{
   int i; 
   srand(time(0)); 
   i = rand()%101; 
